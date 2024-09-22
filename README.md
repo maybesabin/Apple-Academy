@@ -1,6 +1,6 @@
 # Montessori School Website
 
-## This repository contains the source code for the official Montessori school website, built using React and TypeScript. The website aims to provide an engaging and informative platform for parents, students, and educators.
+This repository contains the source code for the official Montessori school website, built using React and TypeScript. The website aims to provide an engaging and informative platform for parents, students, and educators.
 
 # Features
   Home Page: Overview of the school, vision, and philosophy.
