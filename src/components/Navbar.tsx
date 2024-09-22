@@ -10,8 +10,8 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="sticky top-0 left-0 z-[999]">
-            <div className="flex items-center lg:justify-between justify-between px-12 w-screen h-24 text-xl bg-white" id='navbar'>
+        <div className="fixed top-0 left-0 z-[999]">
+            <div className="flex items-center lg:justify-between justify-between md:px-12 px-4 w-screen md:h-24 h-[4rem] text-xl bg-white" id='navbar'>
                 <div className='flex items-center justify-center gap-4'>
                     {/* <img className='opacity-90' src={Logo} width={'70px'} alt="Apple Academy Logo" /> */}
                     <p className='text-3xl font-bold'>Apple</p>

@@ -45,7 +45,7 @@ const ImageCarousel = () => {
                 key={index}
                 className={`flex items-center justify-center`}
               >
-                <img className="rounded-[7rem]" width={'550px'} src={image} alt={`carousel-${index}`} />
+                <img className="rounded-[2rem]" width={'550px'} src={image} alt={`carousel-${index}`} />
               </CarouselItem>
             ))}
           </CarouselContent>

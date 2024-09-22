@@ -52,6 +52,32 @@ body{
   }
 }
 
+#read-more h1{
+  transition: all .4s;
+}
+
+#read-more svg{
+  transition: all .4s;
+}
+
+#read-more{
+  transition: all .4s;
+}
+
+#read-more:hover{
+  border: 1px solid purple;
+  background-color: purple;
+  & h1 {
+    color: white;
+  }
+
+  & svg {
+    scale: 1.25;
+    margin-left: 1rem;
+  }
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
