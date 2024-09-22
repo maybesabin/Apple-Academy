@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 src/assets
+tailwid.config.js
+tsconfig.app.json 
+tsconfig.json 
+tsconfig.node.json 
+vite.config.js
 
 # Editor directories and files
 .vscode/*
