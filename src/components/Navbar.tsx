@@ -1,0 +1,57 @@
+// import Logo from '../assets/images/apple.png'
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+const Navbar = () => {
+    return (
+        <div className="sticky top-0 left-0 z-[999]">
+            <div className="flex items-center lg:justify-between justify-between px-12 w-screen h-24 text-xl bg-white" id='navbar'>
+                <div className='flex items-center justify-center gap-4'>
+                    {/* <img className='opacity-90' src={Logo} width={'70px'} alt="Apple Academy Logo" /> */}
+                    <p className='text-3xl font-bold'>Apple</p>
+                </div>
+
+                <ul className='items-center justify-center gap-12 lg:flex hidden'>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger className="flex items-center justify-center gap-2">Programs
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#000000" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent className="z-[1000]">
+                                <DropdownMenuLabel>Our Programs</DropdownMenuLabel>
+                                <DropdownMenuSeparator />
+                                <DropdownMenuItem>Toddler</DropdownMenuItem>
+                                <DropdownMenuItem>Elementary School</DropdownMenuItem>
+                                <DropdownMenuItem>Middle School</DropdownMenuItem>
+                                <DropdownMenuItem>High School</DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+                <button className='bg-black text-white lg:flex hidden px-6 py-2 text-[1rem] rounded-full'>Enroll Now</button>
+
+                <svg className="lg:hidden flex cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" color="#000000" fill="none">
+                    <path d="M10 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 19L14 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar

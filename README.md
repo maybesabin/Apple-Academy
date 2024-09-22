@@ -13,4 +13,4 @@ This repository contains the source code for the official Montessori school webs
 # Tech Stack
   Frontend: React, TypeScript, HTML5, CSS3
   State Management: React Hooks
-  Styling: Tailwind CSS / CSS
+  Styling: Tailwind CSS / CSS / Shadcn ui
