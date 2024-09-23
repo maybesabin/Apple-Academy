@@ -23,8 +23,8 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`fixed top-0 left-0 z-[999] transition duration-200 transition-du ${isScrolling ? 'shadow' : ''}`}>
-            <div className="flex items-center lg:justify-between justify-between md:px-12 px-4 w-screen md:h-24 h-[4rem] text-lg bg-white" id='navbar'>
+        <div className={`fixed top-0 left-0 z-[999] transition duration-200 ${isScrolling ? 'shadow' : ''}`}>
+            <div className="flex items-center lg:justify-between justify-between md:px-12 px-4 w-screen md:h-[5rem] h-[4rem] text-lg bg-white" id='navbar'>
                 <div className='flex items-center justify-center gap-4'>
                     {/* <img className='opacity-90' src={Logo} width={'70px'} alt="Apple Academy Logo" /> */}
                     <p className='text-3xl font-bold'>Apple</p>
@@ -48,9 +48,9 @@ const Navbar = () => {
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#faqs">FAQs</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
 

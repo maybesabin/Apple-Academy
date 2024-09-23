@@ -1,13 +1,9 @@
-import image1 from '../assets/images/image1.jpg'
-import image2 from '../assets/images/image2.jpg'
-import image3 from '../assets/images/image3.jpg'
-import image4 from '../assets/images/image4.jpg'
-import image5 from '../assets/images/image5.jpg'
-import image6 from '../assets/images/image6.jpg'
-import image7 from '../assets/images/image7.jpg'
-import image8 from '../assets/images/image8.jpg'
-import image9 from '../assets/images/image9.jpg'
-import image10 from '../assets/images/image10.jpg'
+import image1 from '../assets/images/tst.jpg'
+import image2 from '../assets/images/test2.jpg'
+import image3 from '../assets/images/test3.jpg'
+import image4 from '../assets/images/test4.jpg'
+import image5 from '../assets/images/test5.jpg'
+import image6 from '../assets/images/test6.jpg'
 import { useState, useEffect } from 'react'
 
 import {
@@ -19,33 +15,38 @@ import {
 const ImageCarousel = () => {
   //Auto slide carousel
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image2, image1, image3, image4, image5, image6, image7, image8, image9, image10];
+  const images = [image6, image4, image1, image3, image2, image5];
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <div className="overflow-hidden pointer-events-none">
+    <div className="overflow-hidden pointer-events-none w-screen h-screen">
       {/* Wide Screen Carousel  */}
       <div className='lg:flex hidden'>
         <Carousel>
           <CarouselContent
             style={{
-              transform: `translateX(-${currentIndex * 550}px)`,
+              transform: `translateX(-${currentIndex * 1920}px)`,
               transition: "transform 1s ease-in-out",
             }}
-            className="flex w-[550px]"
+            className="flex w-[1920px] h-[1080px]"
           >
             {images.map((image, index) => (
               <CarouselItem
                 key={index}
                 className={`flex items-center justify-center`}
               >
-                <img className="rounded-[2rem]" width={'550px'} src={image} alt={`carousel-${index}`} />
+                <img
+                  className="object-cover"
+                  style={{ filter: 'brightness(0.5)'}}
+                  src={image}
+                  alt={`carousel-${index}`}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -57,17 +58,22 @@ const ImageCarousel = () => {
         <Carousel>
           <CarouselContent
             style={{
-              transform: `translateX(-${currentIndex * 310}px)`,
+              transform: `translateX(-${currentIndex * 600}px)`,
               transition: "transform 1s ease-in-out",
             }}
-            className="flex"
+            className="flex w-[1920px] h-screen"
           >
             {images.map((image, index) => (
               <CarouselItem
                 key={index}
-                className={`flex items-center justify-center basis-1/3`}
+                className={`flex items-center justify-center`}
               >
-                <img className="lg:rounded-[7rem]" src={image} alt={`carousel-${index}`} />
+                <img
+                  className="w-full object-cover h-screen"
+                  style={{ filter: 'brightness(0.5)'}}
+                  src={image}
+                  alt={`carousel-${index}`}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>

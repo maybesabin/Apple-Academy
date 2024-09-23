@@ -28,6 +28,13 @@ body{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+#hero-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #navbar ul li:hover{
   border: none;
   outline: none;
@@ -35,24 +42,21 @@ body{
   color: darkblue;
 }
 
-#explore-now-btn i {
+#main-btn{
   transition: all .4s;
 }
 
-#explore-now-btn h1{
-  transition: all .4s;
-  padding-left: 0.5rem;
+#main-btn i{
+  transition: all .3s;
 }
 
-#explore-now-btn:hover{
-  & h1 {
-    padding-left: 2rem;
-  }
+#main-btn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 
-  & i {
-    transform: rotate(360deg);
+  & i{
     margin-left: 1rem;
-    scale: 1.25;
   }
 }
 

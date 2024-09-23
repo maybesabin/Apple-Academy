@@ -3,7 +3,7 @@ import Readmore from '../components/ReadMore'
 
 const About = () => {
     return (
-        <div id='about' className='bg-[#373f47] text-white flex items-center py-[5rem] justify-center h-screen'>
+        <div id='about' className='bg-[#373f47] text-white flex items-center py-[5rem] justify-center'>
             <section className='w-[90rem] text-[#c3c9e9] flex flex-col items-center h-full justify-center'>
                 <div className='text-white flex items-start justify-center md:gap-4 gap-2'>
                     <div className='flex items-center flex-col justify-start md:gap-2 gap-0'>
@@ -25,7 +25,7 @@ const About = () => {
                             </span>
                         </p>
 
-                        <Readmore border='violet' data={"Read more about us."} />
+                        <Readmore border='black' data="Read more about us." />
                     </div>
 
                 </div>
