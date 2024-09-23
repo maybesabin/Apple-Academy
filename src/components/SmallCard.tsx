@@ -3,7 +3,7 @@ import ReadMore from "./ReadMore"
 
 const SmallCard = ({ color, cardNumber, name, img }: { color: String, cardNumber: String, name: String, img: string }) => {
     return (
-        /* From Uiverse.io by jubayer-10 */
+
         <div
             className="rounded-2xl w-[20rem] h-[15rem] flex flex-col items-start justify-between bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 space-y-3 relative overflow-hidden"
         >
@@ -16,7 +16,7 @@ const SmallCard = ({ color, cardNumber, name, img }: { color: String, cardNumber
             </div>
 
             <h1 className="font-bold text-xl">{name}</h1>
-            <ReadMore data="Read" />
+            <ReadMore border="black" data="Read" />
         </div>
 
     )
