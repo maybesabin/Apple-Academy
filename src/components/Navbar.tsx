@@ -7,10 +7,23 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { useState , useEffect } from "react"
 
 const Navbar = () => {
+    const [isScrolling, setIsScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolling(window.scrollY > 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="fixed top-0 left-0 z-[999]">
+        <div className={`fixed top-0 left-0 z-[999] transition duration-200 transition-du ${isScrolling ? 'shadow' : ''}`}>
             <div className="flex items-center lg:justify-between justify-between md:px-12 px-4 w-screen md:h-24 h-[4rem] text-xl bg-white" id='navbar'>
                 <div className='flex items-center justify-center gap-4'>
                     {/* <img className='opacity-90' src={Logo} width={'70px'} alt="Apple Academy Logo" /> */}
@@ -18,8 +31,8 @@ const Navbar = () => {
                 </div>
 
                 <ul className='items-center justify-center gap-12 lg:flex hidden'>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li>
                         <DropdownMenu>
                             <DropdownMenuTrigger className="flex items-center justify-center gap-2">Programs
@@ -28,15 +41,13 @@ const Navbar = () => {
                                 </svg>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="z-[1000]">
-                                <DropdownMenuLabel>Our Programs</DropdownMenuLabel>
+                                <a href="#programs"><DropdownMenuLabel>Our Programs</DropdownMenuLabel></a>
                                 <DropdownMenuSeparator />
-                                <DropdownMenuItem>Toddler</DropdownMenuItem>
+                                <DropdownMenuItem>Toddler Program</DropdownMenuItem>
                                 <DropdownMenuItem>Elementary School</DropdownMenuItem>
                                 <DropdownMenuItem>Middle School</DropdownMenuItem>
-                                <DropdownMenuItem>High School</DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
-
                     </li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact Us</a></li>

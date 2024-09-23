@@ -4,7 +4,7 @@ import ImageCarousel from '../components/ImageCarousel'
 const Home = () => {
 
   return (
-    <div className='relative'>
+    <div id='home' className='relative'>
       <Navbar />
       
       <section className='flex lg:flex-row flex-col items-center lg:justify-evenly justify-center lg:h-[110vh] w-screen lg:py-0 pt-[10rem] pb-[5rem]'>
