@@ -18,12 +18,12 @@ const Home = () => {
           </div>
 
           <div className='flex items-center justify-center md:gap-12 gap-6'>
-            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 p-2 text-white text-xl lg:text-2xl items-center justify-center gap-8'>
+            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 p-2 text-white text-xl lg:text-2xl items-center justify-center md:gap-8 gap-4'>
               <h1>Virtual Tour</h1>
               <i className="fa-solid fa-chevron-right"></i>
             </button>
 
-            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 p-2 text-white text-xl lg:text-2xl items-center justify-center gap-8'>
+            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 py-2 px-4 text-white text-xl lg:text-2xl items-center justify-center md:gap-8 gap-4'>
               <h1>Contact Us</h1>
               <i className="fa-solid fa-phone-flip"></i>
             </button>
