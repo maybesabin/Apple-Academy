@@ -9,7 +9,7 @@ import Logo6 from '../assets/images/user6.png'
 
 const Testimonials = () => {
     return (
-        <div className='bg-[#aaabbc] flex items-center py-[5rem] justify-center w-full'>
+        <div id='testimonials' className='bg-[#aaabbc] h-auto flex items-center py-[7rem] justify-center w-full'>
             <section className='w-[90rem] flex items-center h-full justify-center'>
                 <div className='w-full flex items-start justify-center gap-12 flex-wrap'>
                     <div className='bg-white md:flex hidden items-center justify-center w-[20rem] h-[42.5rem] rounded-2xl'>
