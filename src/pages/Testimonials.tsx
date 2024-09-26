@@ -19,23 +19,23 @@ const Testimonials = () => {
                     <h1 className='md:hidden flex font-semibold text-5xl opacity-65'>Testimonials</h1>
 
                     <div className='flex flex-col items-start justify-center gap-9'>
-                        <Card img={Logo1} color={'violet'} cardNumber={'1'} description={"Our daughter looks forward to school every day. The Montessori approach has helped her develop a love for learning that we hadn’t seen before. We couldn’t be happier with our experience here."} name={"Maya Gonzalez"} />
+                        <Card img={Logo1} color={'violet'} cardNumber={'1'} description={"Our daughter looks forward to school every day. The Montessori approach has helped her develop a love for learning that we hadn’t seen before. We couldn’t be happier with our experience here."} name={"Suman Karki"} />
                         <div className='md:flex hidden'>
-                            <SmallCard img={Logo4} name={'Aarav Patel'} color={'green'} cardNumber={'4'} />
+                            <SmallCard img={Logo4} name={'Ramesh Shrestha'} color={'green'} cardNumber={'4'} />
                         </div>
                     </div>
 
                     <div className='flex flex-col items-start justify-center gap-12'>
-                        <SmallCard img={Logo2} name={'Oliver Smith'} color={'yellow'} cardNumber={'2'} />
+                        <SmallCard img={Logo2} name={'Bishnu Adhikari'} color={'yellow'} cardNumber={'2'} />
                         <div className='md:flex hidden'>
-                            <Card img={Logo5} color={'gray'} cardNumber={'5'} description={"I can’t say enough good things about this school. The teachers genuinely care about each child's individual progress. Our son has become more confident and curious since attending!"} name={"Shankar Kumar"} />
+                            <Card img={Logo5} color={'gray'} cardNumber={'5'} description={"I can’t say enough good things about this school. The teachers genuinely care about each child's individual progress. Our son has become more confident and curious since attending!"} name={"Anita Thapa"} />
                         </div>
                     </div>
 
                     <div className='flex flex-col items-start justify-center gap-12'>
-                        <Card img={Logo3} color={'blue'} cardNumber={'3'} description={"This Montessori school has been a blessing for our family. The child-centered approach has made our son more independent and creative"} name={"Zara Khan"} />
+                        <Card img={Logo3} color={'blue'} cardNumber={'3'} description={"This Montessori school has been a blessing for our family. The child-centered approach has made our son more independent and creative"} name={"Sunita Gurung"} />
                         <div className='md:flex hidden'>
-                            <SmallCard img={Logo6} name={'Liam Nguyen'} color={'orange'} cardNumber={'6'} />
+                            <SmallCard img={Logo6} name={'Prakash Bhandari'} color={'orange'} cardNumber={'6'} />
                         </div>
                     </div>
                 </div>

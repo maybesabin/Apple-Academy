@@ -5,6 +5,7 @@ import Testimonials from "./pages/Testimonials"
 import Accordion from "./pages/Accordion"
 import Gallery from "./pages/Gallery"
 import Contact from './pages/Contact'
+import Footer from "./pages/Footer"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Testimonials />
       <Accordion />
       <Contact />
+      <Footer />
     </div>
   )
 }

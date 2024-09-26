@@ -13,7 +13,7 @@ import image12 from '../assets/images/gallery12.jpg'
 import ReadMore from '@/components/ReadMore'
 
 const Gallery = () => {
-    const galleryImages = [image1, image2, image3, image6, image5, image4, image7, image8, image9, image12, image11, image10]
+    const galleryImages = [image1, image2, image3, image5, image4, image6, image9, image8, image7, image12, image11, image10]
 
     return (
         <div id='gallery' className='bg-white text-black flex items-center py-[5rem] justify-center'>
