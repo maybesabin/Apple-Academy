@@ -43,7 +43,7 @@ const Programs = () => {
                             <div key={index} className="flex items-center justify-center gap-[5rem] md:px-0 px-12">
                                 {index === 1 ? (
                                     <>
-                                        <div style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} className="md:w-[50%] w-full rounded-[1.5rem] flex flex-col items-start text-left justify-center gap-4 bg-[#f0f6ff] p-6">
+                                        <div style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} className="md:w-[50%] w-[360px] rounded-[1.5rem] flex flex-col items-start text-left justify-center gap-4 bg-[#f0f6ff] p-6">
                                             <h1 className="border border-black px-4 py-2 text-xl">{item.title}</h1>
                                             <p>{item.description}</p>
                                             <ReadMore data="Learn More" border="" />
