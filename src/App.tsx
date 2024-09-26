@@ -4,6 +4,7 @@ import Programs from './pages/Programs'
 import Testimonials from "./pages/Testimonials"
 import Accordion from "./pages/Accordion"
 import Gallery from "./pages/Gallery"
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -11,9 +12,10 @@ const App = () => {
       <Home />
       <Programs />
       <About />
-      <Testimonials />
       <Gallery />
+      <Testimonials />
       <Accordion />
+      <Contact />
     </div>
   )
 }

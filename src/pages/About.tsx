@@ -1,4 +1,4 @@
-import PrincipalImage from '../assets/images/principal.jpg'
+import PrincipalImage from '../assets/images/gallery12.jpg'
 import Readmore from '../components/ReadMore'
 
 const About = () => {
