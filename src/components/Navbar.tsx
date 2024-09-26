@@ -32,7 +32,6 @@ const Navbar = () => {
 
                 <ul className='items-center justify-center gap-6 lg:flex hidden'>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
                     <li>
                         <DropdownMenu>
                             <DropdownMenuTrigger className="flex items-center justify-center gap-2">
@@ -48,6 +47,7 @@ const Navbar = () => {
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#faqs">FAQs</a></li>

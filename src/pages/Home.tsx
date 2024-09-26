@@ -4,12 +4,12 @@ import ImageCarousel from '../components/ImageCarousel'
 const Home = () => {
 
   return (
-    <div id='home' className='h-screen relative'>
+    <div id='home' className='relative'>
       <Navbar />
       <ImageCarousel />
 
-      <section className='h-full flex lg:flex-row flex-col items-center lg:justify-evenly justify-center w-screen py-[10rem] text-white'>
-        <div id='hero-div' className='z-[998] w-full lg:text-8xl md:text-7xl text-4xl leading-[2.5rem] flex flex-col items-center justify-center lg:gap-[3rem] gap-9 h-auto text-center'>
+      <section className='flex lg:flex-row flex-col items-center lg:justify-evenly justify-center w-screen text-white'>
+        <div id='hero-div' className='z-[998] w-full lg:text-8xl md:text-7xl text-[2.5rem] leading-[2.5rem] flex flex-col items-center justify-center lg:gap-[3rem] gap-9 h-auto text-center'>
 
           <div className='flex flex-col items-center justify-center w-full'>
             <h1 className='font-light'>welcome to </h1>
@@ -18,12 +18,12 @@ const Home = () => {
           </div>
 
           <div className='flex items-center justify-center md:gap-12 gap-6'>
-            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 p-2 text-white text-xl lg:text-2xl items-center justify-center md:gap-8 gap-4'>
+            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 px-4 py-2 text-white text-xs lg:text-2xl items-center justify-center md:gap-8 gap-4'>
               <h1>Virtual Tour</h1>
               <i className="fa-solid fa-chevron-right"></i>
             </button>
 
-            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 py-2 px-4 text-white text-xl lg:text-2xl items-center justify-center md:gap-8 gap-4'>
+            <button id='main-btn' className='border border-white flex transition-all md:px-6 md:py-4 px-4 py-2 text-white text-xs lg:text-2xl items-center justify-center md:gap-8 gap-4'>
               <h1>Contact Us</h1>
               <i className="fa-solid fa-phone-flip"></i>
             </button>

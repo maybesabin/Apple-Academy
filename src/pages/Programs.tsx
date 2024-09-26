@@ -27,8 +27,8 @@ const Programs = () => {
     };
 
     return (
-        <div id="programs" className='bg-white flex items-center py-[7rem] justify-center w-full'>
-            <section className='w-[90rem] flex flex-col items-start h-full justify-start'>
+        <div id='programs' className='bg-white text-black flex items-center py-[7rem] justify-center'>
+            <section className='w-[90rem] flex flex-col items-start justify-start'>
                 <div className="flex items-start justify-center w-full gap-4">
                     <div className="flex flex-col items-center justify-center gap-1">
                         <h1 className='md:text-7xl text-5xl font-extralight'>Our</h1>
@@ -40,23 +40,23 @@ const Programs = () => {
                 <div className="flex flex-col items-center justify-center gap-[5rem] pt-[5rem]">
                     {Object.values(admissionPrograms).map((item, index) => {
                         return (
-                            <div key={index} className="flex items-center justify-center gap-[5rem] w-full md:px-0 px-12">
+                            <div key={index} className="flex items-center justify-center gap-[5rem] md:px-0 px-12">
                                 {index === 1 ? (
                                     <>
-                                        <div style={{boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}} className="md:w-[50%] w-full rounded-[1.5rem] flex flex-col items-start text-left justify-center gap-4 bg-[#f0f6ff] p-6">
+                                        <div style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} className="md:w-[50%] w-full rounded-[1.5rem] flex flex-col items-start text-left justify-center gap-4 bg-[#f0f6ff] p-6">
                                             <h1 className="border border-black px-4 py-2 text-xl">{item.title}</h1>
                                             <p>{item.description}</p>
-                                            <ReadMore data="Learn More" border="black" />
+                                            <ReadMore data="Learn More" border="" />
                                         </div>
                                         <img src={item.image} className="lg:w-[260px] w-[150px] md:flex hidden" alt="" />
                                     </>
                                 ) : (
                                     <>
                                         <img src={item.image} className="lg:w-[260px] w-[150px] md:flex hidden" alt="" />
-                                        <div style={{boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}}  className="md:w-[50%] w-full rounded-[1.5rem] flex flex-col items-start text-left justify-center gap-4 bg-[#ecfffb] p-6">
+                                        <div style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} className="md:w-[50%] w-full rounded-[1.5rem] flex flex-col items-start text-left justify-center gap-4 bg-[#ecfffb] p-6">
                                             <h1 className="border border-black px-4 py-2 text-xl">{item.title}</h1>
                                             <p>{item.description}</p>
-                                            <ReadMore data="Learn More" border="black" />
+                                            <ReadMore data="Learn More" border="" />
                                         </div>
                                     </>
                                 )}

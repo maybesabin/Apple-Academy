@@ -16,7 +16,7 @@ const SmallCard = ({ color, cardNumber, name, img }: { color: String, cardNumber
             </div>
 
             <h1 className="font-bold text-xl">{name}</h1>
-            <ReadMore border="black" data="Read" />
+            <ReadMore border="" data="Read" />
         </div>
 
     )

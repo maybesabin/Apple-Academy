@@ -17,7 +17,7 @@ const Gallery = () => {
 
     return (
         <div id='gallery' className='bg-white text-black flex items-center py-[5rem] justify-center'>
-            <section className='w-[90rem] gap-[5rem] flex flex-col items-center h-full justify-start'>
+            <section className='w-[90rem] gap-[1rem] md:gap-[5rem] flex flex-col items-center h-full justify-start'>
                 <div className='flex items-start justify-center md:gap-4 gap-2'>
                     <div className='flex items-center flex-col justify-start md:gap-2 gap-0'>
                         <h1 className='md:text-7xl text-5xl font-extralight'>Our</h1>
@@ -58,7 +58,7 @@ const Gallery = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-center md:justify-start w-full'>
+                <div className='flex justify-center w-full'>
                     <ReadMore border='blue' data='See More' />
                 </div>
             </section>

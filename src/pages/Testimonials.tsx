@@ -33,7 +33,7 @@ const Testimonials = () => {
                     </div>
 
                     <div className='flex flex-col items-start justify-center gap-12'>
-                        <Card img={Logo3} color={'blue'} cardNumber={'3'} description={"This Montessori school has been a blessing for our family. The child-centered approach has made our son more independent and creative. He comes home excited to share what he's learned each day!"} name={"Zara Khan"} />
+                        <Card img={Logo3} color={'blue'} cardNumber={'3'} description={"This Montessori school has been a blessing for our family. The child-centered approach has made our son more independent and creative"} name={"Zara Khan"} />
                         <div className='md:flex hidden'>
                             <SmallCard img={Logo6} name={'Liam Nguyen'} color={'orange'} cardNumber={'6'} />
                         </div>

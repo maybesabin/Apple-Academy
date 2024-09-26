@@ -15,7 +15,7 @@ const Card = ({ color, cardNumber, description, name, img }: { color: String, ca
             <p className="text-sm text-zinc-500 leading-6">
                 {description}...
             </p>
-            <ReadMore border="black" data="Read More" />
+            <ReadMore border="" data="Read More" />
         </div>
 
     )

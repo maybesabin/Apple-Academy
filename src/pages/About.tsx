@@ -1,4 +1,4 @@
-import PrincipalImage from '../assets/images/gallery12.jpg'
+import PrincipalImage from '../assets/images/principal.jpg'
 import Readmore from '../components/ReadMore'
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
                             </span>
                         </p>
 
-                        <Readmore border='black' data="Read more about us." />
+                        <Readmore border='white' data="Read more about us." />
                     </div>
 
                 </div>
